@@ -1,0 +1,122 @@
+#brand h2, #NAV li, #mobile-menu li {
+	color: rgb(45,45,45);
+	font-family: 'merriweather', sans-serif;
+}
+#NAV li {
+	color: rgb(45,45,45);
+}
+#header.add-Background #brand h2, #header.add-Background #NAV li {
+	color: rgb(255,255,255);
+}
+#header.add-Background #NAV li.active, #header.add-Background #NAV .active li, #header.add-Background #NAV li:hover {
+	color: rgb(0, 102, 204);
+}
+
+.intro {
+	width: 100%;
+	padding: 0;
+	padding-top: 20vh;
+}
+.passion-container, .my-story, .current {
+	width: 100%;
+	padding: 3vh 12vw 15vh 14vw;
+	margin: 0;
+	background-color: rgba(255,255,255,1);
+	color: rgb(45,45,45);
+	text-align: left;
+}
+.passion-row {
+	margin: 1em 0 1em 0;
+}
+.passion {
+	font-size: 6.5vw;
+	display: inline-block;
+	margin: 0;
+	line-height: 1;
+	font-family: 'merriweather', sans-serif;
+}
+.passion-description {
+	font-size: 2vw;
+	display: inline-block;
+	list-style-type: none;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	color: rgb(0, 102, 204);
+}
+.about-me-intro h3 {
+	color: white;
+	font-family: 'merriweather', sans-serif;
+}
+.about-me-intro p {
+	font-size: 17px;
+	color: white;
+}
+.first-letter {
+	font-size: 8vw;
+}
+.my-story .row {
+	width: 100%;
+	margin: 0;
+	padding-top: 20px;
+}
+.my-story p {
+	font-size: 1.2em;
+	margin: 0;
+}
+.my-story h4 {
+	display: inline-block;
+	margin: 0;
+	line-height: 1.5;
+}
+.my-story .right {
+	display: inline-block;
+	float: right;
+	max-width: 85%;
+}
+.current {
+	font-size: 1.2em;
+}
+.current h2 {
+	font-size: 2.5em;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 700px) {
+	#header {
+		background-color: rgb(45,45,45);
+	}
+	#brand h2 {
+		color: rgb(255,255,255);
+	}
+	.passion {
+		font-size: 7.5vw;
+	}
+	.first-letter {
+		font-size: 10vw;
+	}
+	.passion-description {
+		font-size: 3.5vw;
+	}
+	.current h2 {
+		font-size: 2em;
+	}
+	.my-story h4 {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.my-story .right {
+		display: block;
+		float: none;
+		max-width: 100%;
+	}
+	.passion-container, .my-story, .current {
+		padding: 3vh 3vw 15vh 4vw;
+	}
+}
+
+@media screen and (max-width: 450px) {
+
+}

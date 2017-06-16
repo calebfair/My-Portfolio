@@ -1,0 +1,711 @@
+/* General Formatting */
+body {
+	font-size: 1em;
+	font-family: 'Raleway', sans-serif;
+}
+body p {
+	font-family: 'Raleway', sans-serif;
+}
+
+/* Font Formatting */
+.merriweather {
+	font-family: 'merriweather', sans-serif;
+}
+
+/* button formatting */
+.button {
+	width: 25%;
+	min-width: 115px;
+	margin: 0;
+	border-radius: 4px;
+	border: white solid 1px;
+	color: white;
+	background: rgb(0, 102, 204);
+}
+.button p {
+	padding: .5em 0 .5em 0;
+	margin: 0;
+	text-align: center;
+}
+.button a {
+	color: white;
+	text-decoration: none;
+}
+.button:hover {
+	background: white;
+	border: rgb(0, 102, 204) solid 2px;
+	color: rgb(0, 102, 204);
+	cursor: pointer;
+}
+.button a:active {
+	text-decoration: none;
+}
+.button a:hover {
+	font-weight: normal;
+	text-decoration: none;
+}
+.btn-popup-close {
+	float: right;
+	margin: 1.5em 20% .5em 0;
+}
+.btn-popup-link {
+	float: left;
+	margin: 1.5em 0 .5em 20%;
+}
+
+/* hide the mobile menu button */
+#mobile-NAV {
+	display: block;
+	float: right;
+	display: none;
+	padding-top: 3px;
+}
+#mobile-NAV-button {
+	border-radius: 20px;
+	-webkit-transition: box-shadow 1s;
+	transition: box-shadow 1s;
+}
+
+/* hide the project popup divs */
+.project-popup {
+	transition: max-height 1s;
+	-webkit-transition: max-height 1s;
+	position: fixed;
+	top: 13vh;
+	left: 18%;
+	display: block;
+	width: 64%;
+	margin: 0;
+	z-index: 2;
+	height: 84vh;
+	background-color: rgba(45,45,45,1);
+	border: none;
+	overflow: hidden;
+	max-height: 0px;
+}
+.project-intro p {
+	color: white;
+}
+
+/* Mobile Menu dropdown menu */
+/* Sizes, formats, and colors the entire section (including text) */
+#mobile-menu {
+	width: 100%;
+	display: block;
+	display: none;
+	float: right;
+	z-index: 2;
+	padding: 0;
+	text-align: left;
+	font-size:1.25em;
+}
+.mobile-project-list li {
+	font-size: .8em;
+}
+#mobile-menu a {
+	margin-left: 0;
+}
+
+#mobile-menu ul {
+	padding: 0;
+	margin: 0;
+}
+
+#header #mobile-menu li {
+	padding-top: 0;
+	display: block;
+	width: 100%;
+	padding-left: 5%;
+	color: rgb(45,45,45);
+	margin-left: 0;
+	background-color: rgba(230,230,230,.9);
+}
+
+/* Hover formats for the mobile-menu dropdown */
+#header #mobile-menu li:hover {
+	text-decoration: none;
+	color: rgb(0, 102, 204);
+	background-color: rgba(45,45,45,.9);
+	font-weight: normal;
+}
+#header #mobile-menu a:hover {
+	text-decoration: none;
+}
+
+
+/* Formatting for 'Rows', general default formatting used throughout */
+.rows {
+	padding: 5% 12.5% 5% 12.5%;
+	height: 100%;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/* Formatting for Links, general default formatting used througout */
+a:hover {
+	color: rgb(0, 102, 204);
+}
+
+/* HEADER Formatting */
+#header {
+	transition: background-color .75s;
+	-webkit-transition: background-color .75s;
+	background-color: rgba(45,45,45,0);
+	z-index: 9999;
+	position: fixed;
+	width: 100%;
+	border-bottom: white solid 0px;
+	height: 65px;
+}
+#header .rows {
+	font-size: 1.25em;
+	padding-top: 1em;
+	padding-bottom: 0;
+	padding: 0 10%;
+	margin: 0;
+	width: 100%;
+}
+#brand {
+	float: left;
+	text-align: left;
+	width: 16.5%;
+	min-width: 7em;
+	padding-top: 0;
+	height: 100%;
+}
+#brand h2 {
+	font-size: 1.3em;
+	color: white;
+	padding-top: 0;
+	padding-bottom: 2%;
+	margin: 0;
+	padding-top: 20px;
+}
+#NAV {
+	float: right;
+	text-align: right;
+	width: 35%;
+	height: 100%;
+	min-width: 18em;
+	font-size: 1.1em;
+}
+#NAV a {
+	margin-left: 5%;
+	text-decoration: none;
+	font-family: 'merriweather', sans-serif;
+}
+#projects-menu, #mobile-projects-menu {
+	border-bottom: none;
+	margin-left: 5%;
+}
+#header li:hover {
+	text-decoration: none;
+	color: rgb(0, 102, 204);
+}
+#NAV ul {
+	padding-top: 20px;
+	padding-bottom: 0;
+	padding-left: 0;
+	margin: 0;
+	height: 100%;
+}
+#header li {
+	color: white;
+	font-family: 'merriweather', sans-serif;
+	display: inline-block;
+	height: 100%;
+}
+#header.add-Background {
+	background-color: rgba(45,45,45,1);
+}
+
+/* Styling for when a menu item has been clicked or is being used */
+#NAV a.active {
+	border-bottom: 1px rgb(0, 102, 204) solid;
+	color: rgb(0, 102, 204);
+}
+#header #mobile-menu a.active {
+	color: rgb(0, 102, 204);
+}
+#NAV li.active, #header #mobile-menu li.active {
+	color: rgb(0, 102, 204);
+}
+#header .active li, #header #mobile-menu .active li {
+	color: rgb(0,102,204);
+}
+.glow {
+	box-shadow: 0 0 10px white;
+}
+#projects-menu:hover, #mobile-projects-menu:hover, .project-thumbnail {
+	cursor: pointer;
+}
+
+
+/* Project List dropdown menu */
+/* Sizes, formats, and colors the entire section (including text) */
+.project-list {
+	position: fixed;
+	width: 35%;
+	display: block;
+	display: none;
+	right: 0;
+	background-color: rgba(230,230,230,.9);
+	z-index: 9999;
+	padding: 0;
+	text-align: left;
+	color: rgb(45,45,45);
+	font-size:1.25em;
+}
+.mobile-project-list {
+	margin-top: 0;
+	position: fixed;
+	width: 35%;
+	display: block;
+	display: none;
+	right: 0;
+	z-index: 9999;
+	padding: 0;
+	text-align: left;
+	color: rgb(45,45,45);
+	font-size:1.25em;
+}
+#mobile-menu li.active {
+	background-color: rgba(45,45,45,.9);
+}
+
+.project-list a, .mobile-project-list a {
+	margin-left: 0;
+}
+
+.project-list ul, .mobile-project-list ul {
+	padding: 0;
+	margin: 0;
+}
+
+#header .project-list li, #header .mobile-project-list li {
+	padding: .25em 0 .25em 5%;
+	display: block;
+	width: 100%;
+	color: rgb(45,45,45);
+	margin-left: 0;
+	font-weight: normal;
+}
+
+/* Hover formats for the project list dropdown menu */
+#header .project-list li:hover, #header .mobile-project-list li:hover {
+	text-decoration: none;
+	color: rgb(0, 102, 204);
+	background-color: rgba(45,45,45,.9);
+}
+#header .project-list a:hover, #header .mobile-project-list a:hover {
+	text-decoration: none;
+}
+
+/* MAIN */
+/* This section provides the background image, formatting, and sizing for the entire page */
+.backgroundImage {
+	background: url('../images/background.png') no-repeat fixed;
+	background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	-webkit-background-size: cover;
+	z-index: -1;
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	opacity: .75;
+}
+
+
+/* Defines the sizing of the intro section */
+/* This section creates the open-space when the page is first opened. This section allows the background
+ image to be seen and provides a scrollable intro/about-me section */
+.intro {
+	padding: 7% 6%;
+	min-width: 25em;
+}
+
+
+/* Aboout Me */
+
+/* Sizing formats for the About Me section */
+#first-scroll-row {
+	height: 100%;
+}
+
+.about-me {
+	height: 32%;
+	text-align: center;
+	margin: 12.5%;
+	padding: 2.5% 6%;
+	background-color: rgba(45,45,45,.95);
+	box-shadow: 2px 2px 5px rgb(10,10,10);
+	border-radius: 4px;
+	z-index: 1;
+}
+
+/* Text formats for the About Me section */
+.about-me h3 {
+	color: white;
+}
+
+.about-me p {
+	font-size: 17px;
+	color: white;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
+/* CONTENT SCROLLER */
+.content-scroller {
+	width: 80%;
+	display: block;
+	overflow: auto;
+	z-index: 1;
+	margin: 0 10% 10% 10%;
+	background-color: white;
+	box-shadow: 2px 2px 5px rgb(10,10,10);
+	color: black;
+	border-radius: 4px;
+	min-width: 25em;
+}
+
+/* PROJECT LINKS */
+
+/* General Spacing of the Project links section of the content scroller */
+.content-scroller .rows {
+	display: block;
+	overflow: auto;
+	padding: 1% 0 2% 0;
+}
+
+.content-scroller .project-heading {
+	padding: 2.5% 30%;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	height: 10%;
+	display: inline-block;
+}
+
+#last-row-projects {
+	padding-bottom: 5%;
+}
+
+/* General formatting of the text in the project links section */
+.content-scroller .project-heading h3 {
+	font-family: 'merriweather', sans-serif;
+	color: rgba(45,45,45,1);
+	border-bottom: rgba(45,45,45,1) solid 1px;
+	padding-bottom:.25em;
+}
+
+.content-scroller h4, .project-title, .project-title:hover {
+	text-decoration: none;
+	color:rgba(45,45,45,1);
+	width: auto;
+	display: inline-block;
+	-webkit-transition: opacity .5s;
+	transition: opacity .5s;
+}
+
+
+/* Spacing formats for the thumbnail columns */
+.project-thumbnail {
+	height: 100%;
+	width: 48%;
+	padding: 0;
+	text-align: center;
+}
+.project-thumbnail-left {
+	margin: 0 2% 0 0;
+	float: left;
+}
+.project-thumbnail-right {
+	margin: 0 0 0 2%;
+	float: right;
+}
+.project-thumbnail:hover {
+	opacity: 0.75;
+}
+.check-back-message {
+	width: 48%;
+	padding: 0;
+	margin-left: 2%;
+	float: right;
+	text-align: center;
+}
+.check-back-message h4 {
+	font-size: 2em;
+}
+
+/* Sizing formats for the project link images */
+.content-scroller a {
+	-webkit-transition: opacity .5s;
+	transition: opacity .5s;
+}
+
+.content-scroller img {
+	width: 100%;
+	height: auto;
+	box-shadow: 2px 2px 5px rgb(10,10,10);
+	-webkit-transition: opacity .5s;
+	transition: opacity .5s;
+}
+
+
+/* Formats for popup sections */
+.project-intro {
+	width: 100%;
+	padding: 1em 10% 0 10%;
+	height: 10em;
+}
+.popup-name {
+	text-align: center;
+	font-size: 2em;
+}
+.popup-menu {
+	width: 100%;
+	height: 5em;
+}
+.project-popup img {
+	display: block;
+	box-shadow: none;
+	height: -webkit-calc(84vh - 16em);
+	height: -o-calc(84vh - 16em);
+	height: -moz-calc(84vh - 16em);
+	height: calc(84vh - 16em);
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* FOOTER */
+.footer {
+	display: block;
+	overflow: auto;
+	background-color: rgba(45,45,45,1);
+	z-index: 2;
+	width: 100%;
+	position: static;
+	bottom: 0;
+	min-width: 25em;
+}
+
+.footer .rows {
+	display: block;
+	overflow: auto;
+	font-size: 14px;
+	padding: 5px 10% 1% 10%;
+	padding-bottom: 0px;
+	margin: 0;
+	width: 100%;
+	min-height: 36px;
+}
+
+.footer ul {
+	padding-left: 0;
+	margin: 0;
+}
+
+.footer li {
+	display: inline;
+	color:white;
+	padding: 0 1%;
+	font-family: 'merriweather', sans-serif;
+}
+
+.footer p {
+	color: white;
+	font-family: 'merriweather', sans-serif;
+	margin: 0;
+}
+
+#links {
+	vertical-align: middle;
+	text-align: left;
+	float: left;
+	width: 70px;
+}
+
+#links a {
+	width: 30px;
+	display: inline-block;
+	margin-bottom: 0;
+	padding-right: 4px;
+}
+
+#links img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#contact {
+	padding-top: 0.25%;
+	text-align: right;
+	float: right;
+	width: 75%;
+	max-width: 24em;
+}
+
+
+/* Styling at screen sizes less than 1035 px */
+@media screen and (max-width: 1035px) {
+	/* style buttons */
+	.button {
+		font-size: .9em;
+	}
+	/* style project list */
+	.project-list {
+		width: 100%;
+	}
+	.mobile-project-list {
+		width: 95%;
+		font-size: 1.25em;
+	}
+	/* style text in "check back" section */
+	/* style popup section */
+	.project-popup {
+		height: auto;
+	}
+	.project-intro {
+		width: 90%;
+		margin: 0 5%;
+		padding-left: 0;
+		padding-right: 0;
+		height: auto;
+	}
+	.popup-description {
+		font-size: .95em;
+	}
+	.popup-image-container img {
+		width: 90%;
+		height: auto;
+		margin-top: 1em;
+	}
+}
+
+/* Hide Nav Bar and Show Nav Button for smaller window sizes */
+/* General styling for mobile screen sizes */
+@media screen and (max-width: 700px) {
+	/* Override min-widths*/
+	.footer, .footer .rows, #header .rows, .content-scroller, .intro, .about-me, #first-scroll-row {
+		min-width: 1px;
+	}
+
+	/* general formatting */
+	.footer .rows {
+		padding: 5px 1em 0 1em;
+	}
+	#header .rows {
+		padding: 0 1em;
+	}
+	#header img {
+		margin-top: 5px;
+	}
+	#NAV {
+		display: none;
+	}
+	#mobile-NAV {
+		display: block;
+	}
+	#header {
+		height: 50px;
+	}
+	body, .footer .rows {
+		font-size:.8em;
+	}
+	.content-scroller, .intro {
+		width: 96%;
+		padding: 0;
+		margin: 0 2% 0 2%;
+	}
+	.about-me, #first-scroll-row {
+		width: 90%;
+		margin: 0 5% 0 5%;
+		padding: 0;
+		min-width: 5px;
+	}
+	.about-me {
+		padding: 1%;
+	}
+	.about-me p {
+		font-size: 1.1em;
+	}
+	.about-me h3 {
+		margin: 10px 0 10px 0;
+	}
+	.intro {
+		padding-top: 80px;
+		margin: 0;
+		width: 100%;
+	}
+
+	/* styling of content scroller */
+	.content-scroller .project-heading {
+		padding: 0 5% 0 5%;
+	}
+	.project-heading h3 {
+		font-size: 20px;
+	}
+	.content-scroller {
+		margin-bottom: 50px;
+		margin-top: 10%;
+	}
+	.content-scroller .project-title {
+		font-size: 16px;
+	}
+	.check-back-message h4 {
+		font-size: 1.25em;
+	}
+
+	/* styling of project popup */
+	.project-popup {
+		width: 96%;
+		left: 2%;
+	}
+	/* styling of buttons */
+	.btn-popup-close {
+		float: right;
+		margin: 1.5em 15% .5em 0;
+	}
+	.btn-popup-link {
+		float: left;
+		margin: 1.5em 0 .5em 15%;
+	}
+}
+
+/* Styling for phone screen sizes */
+@media screen and (max-width: 450px) {
+	/* Declare specific divs as "flex-wrap" */
+	.content-scroller {
+		display: flex;
+		flex-wrap: wrap;
+		flex-basis: 100%
+	}
+
+	/* resize divs to optimize screen and flex-wrapping */
+	.project-thumbnail, .check-back-message {
+		width: 90%;
+	}
+	.project-thumbnail-right, .project-thumbnail-left, .check-back-message {
+		margin: .5em 5%;
+	}
+	.btn-popup-close {
+		width: 50%;
+		margin: 0 25% 1em 25%;
+	}
+	.btn-popup-link {
+		width: 50%;
+		margin: 1em 25% .5em 25%;
+	}
+	#contact {
+		max-width: 15em; ;
+	}
+	#contact li {
+		display: block;
+	}
+}

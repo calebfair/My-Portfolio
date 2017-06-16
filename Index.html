@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+	<title>Caleb Fair: Portfolio Home</title>
+	<meta charset="UTF-8">
+	<link rel='stylesheet' href='CSS/main.css'>
+	<link rel='stylesheet' href='../Support-Files/CSS/CSS-Animations.CSS'>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+</head>
+
+<body>
+
+	<div id="header">
+		<!-- Fixed position-->
+		<div class="rows">
+			<!-- This column is a container for my name and a small styling feature/link --> 
+			<!-- Fixed in place, above everything else-->
+			<div id="brand">
+				<h2 class="merriweather">Caleb Fair</h2>
+			</div>
+			<!-- This column is a container for a navigation bar with a dropdown menu --> <!-- -->
+			<!-- To be included: About, Projects, Contact -->
+			<div id="NAV">
+				<ul>
+					<a href="Index.html" class="active"><li>Home</li></a>
+					<a href="Pages/About.html"><li>About Me</li></a>
+					<li id="projects-menu">Projects</li>
+				</ul>
+			</div>
+			<div id="mobile-NAV">
+				<img id="mobile-NAV-button" src="Images/mobile-menu.png">
+			</div>
+		</div>
+		<!-- This is the project list section, each row is a link to one of my projects -->
+		<div class="project-list">
+			<ul>
+				<a href="www.commoncupcoffee.com"><li>The Common Cup</li></a>
+				<a href="#"><li>Suggestion Box</li></a>
+				<li>COMING SOON - Milk and Honey</li>
+			</ul>
+		</div>
+		<div id="mobile-menu">
+				<ul>
+					<a href="Index.html" class="active"><li>Home</li></a>
+					<a href="Pages/About.html"><li>About Me</li></a>
+					<li id="mobile-projects-menu">Projects</li>
+				</ul>
+				<div class="mobile-project-list">
+					<ul>
+						<a href="www.commoncupcoffee.com"><li>The Common Cup</li></a>
+						<a href="#"><li>Suggestion Box</li></a>
+						<li>COMING SOON - Milk and Honey</li>
+					</ul>
+				</div>
+		</div>
+	</div>
+
+	<div class="backgroundImage">
+	<!-- Main will consist of a background image for the introduction to the page -->
+	<!-- This section will be below the rest of the content -->
+	<!-- Position will be Fixed -->
+	</div>
+
+	<div class = 'intro'>
+		<!-- This section will describe who I am, my passions, my drive, my goals -->
+		<!-- Will scroll -->
+		<div class="rows" id="first-scroll-row">
+			<div class="about-me">
+				<h3 class="merriweather">Engineer turned Web Desinger</h3>
+				<p>While working in the Automotive Industry, I realized that my job was not a good fit. So I began looking at other options and Web Design quickly became my drive.</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="content-scroller">
+	<!-- This will scroll above Main-->
+			<!-- This section will provide links with a preview image to my various projects -->
+			<!-- within Content Scroller -->
+			<div class="rows project-heading">
+				<h3>live projects</h3>
+			</div>
+
+			<!-- This section contains a grid with the projects in it -->
+				<!-- The "project-popup" divs are hidden intitially, but when the project thumbnails are clicked, they popup to show more information about each project -->
+
+			<!-- This is row 1 of the project thumbnails -->
+			<div class="rows">
+				<!-- This is the left thumbnail of row 1 -->
+				<div class="project-thumbnail project-thumbnail-left">
+					<h4 class="project-title">The Common Cup</h4>
+					<img src="Images/CommonCupCoffee-thumbnail.PNG" class="project-image">
+				</div>
+				<div class="project-popup">
+					<div class="project-intro">
+						<p class="popup-name">The Common Cup</p>
+						<p class="popup-description">Power by WordPress for streamlined content updates by the manager of The Common Cup. I utilized PHP, CSS, and JavaScript to create a customized theme and plugins. The project goal was to implement a clean design with an intuitive UI.</p>
+					</div>
+					<div class="popup-image-container"><img src="Images/CommonCupCoffee.PNG" class="popup-image"></div>
+					<div class="popup-menu">
+						<div class="button btn-popup-link"><a href="#"><p>View Live Project</p></a></div>
+						<div class="button btn-popup-close"><p >Close</p></div>
+					</div>
+				</div>
+
+				<!-- This is the right thumbnail of row 1 -->
+				<div class="project-thumbnail project-thumbnail-right">
+					<h4 class="project-title">Suggestion Box</h4>
+					<img src="Images/SuggestionBox-thumbnail.PNG" class="project-image">
+				</div>
+				<div class="project-popup">
+					<div class="project-intro">
+						<p class="popup-name">Suggestion Box</p>
+						<p class="popup-description">This is a personal project created using AngularJS.</p>
+					</div>
+					<div class="popup-image-container"><img src="Images/SuggestionBox.PNG" class="popup-image"></div>
+					<div class="popup-menu">
+						<div class="button btn-popup-link"><a href="#"><p>View Live Project</p></a></div>
+						<div class="button btn-popup-close"><p>Close</p></div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- This is the future projects section -->
+			<div class="rows project-heading">
+				<h3>projects in developement</h3>
+			</div>
+
+			<!-- This section contains a grid with the projects in it -->
+				<!-- The "project-popup" divs are hidden intitially, but when the project thumbnails are clicked, they popup to show more information about each project -->
+
+			<!-- This is row 1 of the project thumbnails -->
+			<div class="rows" id="last-row-projects">
+				<!-- This is the left thumbnail of row 1 -->
+				<div class="project-thumbnail project-thumbnail-left">
+					<h4 class="project-title">Milk and Honey</h4>
+					<img src="Images/Milk-and-Honey.jpg" class="project-image">
+				</div>
+				<div class="project-popup">
+					<div class="project-intro">
+						<p class="popup-name">Milk and Honey</p>
+						<p class="popup-description">Power by WordPress for hosting ease and streamlined content updates by the business owner. I utilized PHP, CSS, and JavaScript to display these wonderful baked goods in a customized theme that reflects the personality of the businees owner. The result was an interactive design with an intuitive UI. </p>
+					</div>
+					<div class="popup-image-container"><img src="Images/Milk-and-Honey.jpg" class="popup-image"></div>
+					<div class="popup-menu">
+						<div class="button btn-popup-link"><a href="#"><p>View Live Project</p></a></div>
+						<div class="button btn-popup-close"><p >Close</p></div>
+					</div>
+				</div>
+
+				<!-- This is the right thumbnail of row 1 -->
+				<div class="check-back-message">
+					<h4>More projects coming soon, <br> check back for updates!</h4>
+				</div>
+			</div>
+	</div>
+
+	<div class="footer">
+		<!-- This will close the page. There will be contact information here with links to different media content -->
+		<!-- below Content Scroller -->
+		<!-- Fixed in place, on same level as Header -->
+		<div class="rows">
+			<div id="links">
+				<a href="mailto:calebf@umich.edu"><img src="Images/icon-gmail.png"></a>
+				<a href="https://www.linkedin.com/in/caleb-fair-08a157112"><img src="Images/icon-linkedin.png"></a>				
+			</div>
+			<div id="contact">
+				<ul>
+					<li>E: calebf@umich.edu</li>
+					<li>T: (231) 675-3708</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src='JavaScript/jquery-3.2.0.min.js'></script>
+	<script src='JavaScript/script.js'></script>
+</body>
+</html>
