@@ -1,9 +1,9 @@
 #brand h2, #NAV li, #mobile-menu li {
-	color: rgb(45,45,45);
+	color: rgb(255,255,255);
 	font-family: 'merriweather', sans-serif;
 }
 #NAV li {
-	color: rgb(45,45,45);
+	color: rgb(255,255,255);
 }
 #header.add-Background #brand h2, #header.add-Background #NAV li {
 	color: rgb(255,255,255);
@@ -18,12 +18,19 @@
 	padding-top: 20vh;
 }
 .passion-container, .my-story, .current {
-	width: 100%;
-	padding: 3vh 12vw 15vh 14vw;
-	margin: 0;
+	width: 80%;
+	padding: 3vh 0 15vh 4vw;
+	margin: 0 10%;
 	background-color: rgba(255,255,255,1);
 	color: rgb(45,45,45);
 	text-align: left;
+}
+.my-story, .current {
+        padding-right: 4vw;
+}
+.current {
+        padding-bottom: 3vh;
+        margin-bottom: 12vh;
 }
 .passion-row {
 	margin: 1em 0 1em 0;
@@ -42,6 +49,7 @@
 	line-height: 1;
 	margin: 0;
 	padding: 0;
+        padding-left: 3px;
 	color: rgb(0, 102, 204);
 }
 .about-me-intro h3 {
@@ -85,19 +93,19 @@
 
 @media screen and (max-width: 700px) {
 	#header {
-		background-color: rgb(45,45,45);
+		background-color: rgba(45,45,45,0);
 	}
 	#brand h2 {
 		color: rgb(255,255,255);
 	}
 	.passion {
-		font-size: 7.5vw;
+		font-size: 7vw;
 	}
 	.first-letter {
 		font-size: 10vw;
 	}
 	.passion-description {
-		font-size: 3.5vw;
+		font-size: 3vw;
 	}
 	.current h2 {
 		font-size: 2em;
@@ -113,8 +121,17 @@
 		max-width: 100%;
 	}
 	.passion-container, .my-story, .current {
-		padding: 3vh 3vw 15vh 4vw;
+                width: 94%;
+		padding: 3vh 0 15vh 5vw;
+                margin: 0 3%;
 	}
+        .my-story, .current {
+                padding-right: 4vw;
+        }
+        .current {
+                padding-bottom: 3vh;
+                margin-bottom: 12vh;
+        }
 }
 
 @media screen and (max-width: 450px) {
