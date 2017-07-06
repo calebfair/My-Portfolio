@@ -19,7 +19,7 @@
 }
 .passion-container, .my-story, .current {
 	width: 80%;
-	padding: 3vh 0 15vh 4vw;
+	padding: 5vh 0 10vh 4vw;
 	margin: 0 10%;
 	background-color: rgba(255,255,255,1);
 	color: rgb(45,45,45);
@@ -29,7 +29,7 @@
         padding-right: 4vw;
 }
 .current {
-        padding-bottom: 3vh;
+        padding-bottom: 5vh;
         margin-bottom: 12vh;
 }
 .passion-row {
@@ -66,7 +66,7 @@
 .my-story .row {
 	width: 100%;
 	margin: 0;
-	padding-top: 20px;
+	padding-top: 50px;
 }
 .my-story p {
 	font-size: 1.2em;
@@ -80,7 +80,9 @@
 .my-story .right {
 	display: inline-block;
 	float: right;
-	max-width: 85%;
+	max-width: calc(100% - 120px);
+	max-width: -webkit-calc(100% - 120px);
+	max-width: -moz-calc(100% - 120px);
 }
 .current {
 	font-size: 1.2em;
@@ -122,18 +124,14 @@
 	}
 	.passion-container, .my-story, .current {
                 width: 94%;
-		padding: 3vh 0 15vh 5vw;
+		padding: 5vh 0 10vh 5vw;
                 margin: 0 3%;
 	}
         .my-story, .current {
                 padding-right: 4vw;
         }
         .current {
-                padding-bottom: 3vh;
+                padding-bottom: 5vh;
                 margin-bottom: 12vh;
         }
-}
-
-@media screen and (max-width: 450px) {
-
 }
